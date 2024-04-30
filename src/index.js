@@ -1,6 +1,15 @@
 import './style.css';
 import backgroundImage from './img/doubledFries.png';
 
-document.querySelector('#content');
+const content = document.querySelector('#content');
 
-console.log('hello World');
+let welcomeMsg = document.createElement('h1');
+welcomeMsg.textContent = "Welcome to Fry's Fries!";
+content.appendChild(welcomeMsg);
+
+let slogan = document.createElement('p');
+slogan.textContent =
+    "Food, in the end, in our own tradition, is something holy. It's not about nutrients and calories. It's about sharing. It's about honesty. It's about Identity";
+content.appendChild(slogan);
+
+let viewMenuBtn = document.createElement('button');
