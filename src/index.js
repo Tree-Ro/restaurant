@@ -1,5 +1,5 @@
 import './style.css';
-import backgroundImage from './img/doubledFries.png';
+import doubledFries from './img/doubledFries.png';
 
 const content = document.querySelector('#content');
 
@@ -13,3 +13,8 @@ slogan.textContent =
 content.appendChild(slogan);
 
 let viewMenuBtn = document.createElement('button');
+viewMenuBtn.textContent = 'View Menu';
+content.appendChild(viewMenuBtn);
+
+const backgroundImage = new Image();
+backgroundImage.src = doubledFries;
