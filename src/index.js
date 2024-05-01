@@ -1,20 +1,42 @@
 import './style.css';
-import doubledFries from './img/doubledFries.png';
+import './img/doubledFries.png';
+
+document.body.style = 'backdrop-filter: blur(2px);';
 
 const content = document.querySelector('#content');
 
-let welcomeMsg = document.createElement('h1');
-welcomeMsg.textContent = "Welcome to Fry's Fries!";
-content.appendChild(welcomeMsg);
+let homePage = {
+  createElements: function () {
+    this.subContainer = document.createElement('div');
 
-let slogan = document.createElement('p');
-slogan.textContent =
-    "Food, in the end, in our own tradition, is something holy. It's not about nutrients and calories. It's about sharing. It's about honesty. It's about Identity";
-content.appendChild(slogan);
+    this.titleMsg = document.createElement('h1');
+    this.titleMsg.textContent = "Fry's Fries!";
 
-let viewMenuBtn = document.createElement('button');
-viewMenuBtn.textContent = 'View Menu';
-content.appendChild(viewMenuBtn);
+    this.slogan1 = document.createElement('p');
+    this.slogan1.textContent =
+      "Food, in the end, in our own tradition, is something holy. It's not about nutrients and calories.";
+    this.slogan2 = document.createElement('p');
+    this.slogan2.textContent =
+      "It's about sharing. It's about honesty. It's about Identity";
 
-const backgroundImage = new Image();
-backgroundImage.src = doubledFries;
+    this.viewMenuBtn = document.createElement('button');
+    this.viewMenuBtn.textContent = 'View Menu';
+  },
+
+  appendElements: function () {
+    this.subContainer.appendChild(this.titleMsg);
+
+    this.subContainer.appendChild(this.slogan1);
+    this.subContainer.appendChild(this.slogan2);
+    content.appendChild(this.subContainer);
+
+    content.appendChild(this.viewMenuBtn);
+  },
+
+  render: function () {
+    this.createElements();
+    this.appendElements();
+  },
+};
+
+homePage.render();
