@@ -43,8 +43,8 @@ const homePage = {
   },
 
   render: function () {
-    this.clearContent();
     this.createElements();
+    this.clearContent();
     this.appendElements();
   },
 };

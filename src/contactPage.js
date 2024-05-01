@@ -10,7 +10,11 @@ const contactPage = {
     }
   },
 
-  render: function () {},
+  render: function () {
+    this.createElements();
+    this.clearContent();
+    this.appendElements();
+  },
 };
 
 export default contactPage;

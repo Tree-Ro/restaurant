@@ -26,4 +26,5 @@ const content = document.querySelector('#content');
   });
 })();
 
-homePage.render();
+//homePage.render();
+menuPage.render();

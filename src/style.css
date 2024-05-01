@@ -1,15 +1,14 @@
 body {
     color: white;
     height: 100%;
-    overflow: hidden;
     user-select: none;
+    overflow: hidden;
 }
 
 html {
     background-image: url(./img/doubledFries.png);
     background-position: center center;
     height: 100%;
-    overflow: hidden;
 }
 
 nav {
@@ -49,7 +48,7 @@ nav button {
 
     display: grid;
     place-items: center;
-    grid-template-rows: repeat(4, 0.2fr);
+    grid-template-rows: repeat(4, 0.3fr);
 }
 
 #content div {
@@ -80,4 +79,42 @@ nav button {
     font-weight: bold;
     font-size: 20px;
     padding: 15px;
+}
+
+
+#content #menuWrapper {
+    margin-top: 150px;
+    height: 100%;
+    width: 100%;
+    grid-row: 1/4;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+#content #menuWrapper > div {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+#content #menuWrapper > div:nth-child(1) {
+    grid-row: 1/2;
+}
+#content #menuWrapper > div:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+#content #menuWrapper div img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    grid-row: 1 / -1;
 }
