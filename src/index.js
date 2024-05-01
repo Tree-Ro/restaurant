@@ -26,6 +26,4 @@ const content = document.querySelector('#content');
   });
 })();
 
-//homePage.render();
-//menuPage.render();
-contactPage.render();
+homePage.render();
