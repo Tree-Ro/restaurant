@@ -20,13 +20,13 @@ const menuPage = {
     {
       name: 'Golden Mozzarella Munchies',
       desc: 'Craving something different? Dive into our crispy mozzarella sticks for a satisfying change of pace!',
-      pic: 'mozarellaImg',
+      pic: mozarellaImg,
       btn: 'item3Btn',
     },
     {
       name: "Twist 'n Crunch",
       desc: 'Looking for a twist? Try our irresistible curly fries for a fun and flavorful alternative!',
-      pic: 'curlyImg',
+      pic: curlyImg,
       btn: 'item4Btn',
     },
   ],
