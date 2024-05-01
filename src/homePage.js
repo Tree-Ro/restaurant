@@ -1,3 +1,5 @@
+import menuPage from './menuPage.js';
+
 const homePage = {
   createElements: function () {
     this.subContainer = document.createElement('div');
