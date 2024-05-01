@@ -30,6 +30,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
     color: white;
     height: 100%;
     user-select: none;
+    margin: 0px;
 }
 
 html {
