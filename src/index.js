@@ -27,4 +27,5 @@ const content = document.querySelector('#content');
 })();
 
 //homePage.render();
-menuPage.render();
+//menuPage.render();
+contactPage.render();

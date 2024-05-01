@@ -12,7 +12,7 @@ const homePage = {
       "Food, in the end, in our own tradition, is something holy. It's not about nutrients and calories.";
     this.slogan2 = document.createElement('p');
     this.slogan2.textContent =
-      "It's about sharing. It's about honesty. It's about Identity";
+      "It's about sharing. It's about honesty. It's about Identity!";
 
     this.viewMenuBtn = document.createElement('button');
     this.viewMenuBtn.textContent = 'View Menu';

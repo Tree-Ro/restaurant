@@ -9,6 +9,7 @@ html {
     background-image: url(./img/doubledFries.png);
     background-position: center center;
     height: 100%;
+    overflow: hidden;
 }
 
 nav {
@@ -98,6 +99,7 @@ nav button {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 
     grid-template-rows: 1fr 1fr 1fr;
@@ -117,4 +119,22 @@ nav button {
     width: auto;
     height: auto;
     grid-row: 1 / -1;
+}
+
+#content #contactInfoWrapper {
+    justify-items: start;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 7px;
+    user-select: text;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.4)
+}
+
+#content #contactTitle {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.4)
 }
