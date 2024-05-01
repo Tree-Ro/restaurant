@@ -34,9 +34,18 @@ let homePage = {
   },
 
   render: function () {
+    clearContent();
     this.createElements();
     this.appendElements();
   },
 };
 
 homePage.render();
+
+function clearContent() {
+  for (let i = content.childNodes.length - 1; i >= 0; i--) {
+    const node = content.childNodes[i];
+    console.log(node);
+    node.remove();
+  }
+}
